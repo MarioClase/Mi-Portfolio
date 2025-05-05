@@ -1,0 +1,78 @@
+/* Estilo básico del navbar */
+.navbar {
+  padding: 15px 0;
+  background-color: #fff;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.nav-link {
+  font-weight: 500;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  margin: 5px;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  font-family: 'Poppins', sans-serif;
+
+  &:hover {
+    background-color: rgba(13, 202, 240, 0.1);
+    border-radius: 5px;
+    color: #0dcaf0;
+  }
+
+}
+
+.nav-link i {
+  font-size: 1.2rem;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  &:hover i {
+    transform: scale(1.2) rotate(5deg);
+    color: #0dcaf0;
+  }
+}
+
+/* Cuando el navbar está fijado (se le añade la clase fixed-top) */
+.navbar.fixed-top {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  background-color: #f8f9fa; /* Fondo suave al estar fijo */
+  transform: translateY(0); /* Mantenerlo en la posición */
+}
+
+/* Estilo para la opción activa */
+.active-link .nav-link {
+  color: #0dcaf0 !important; /* Color resaltado para la opción activa */
+  font-weight: 600; /* Poner la fuente en negrita */
+  border-bottom: 3px solid #0dcaf0; /* Subrayado para la opción activa */
+  text-transform: uppercase; /* Convertir a mayúsculas para mayor énfasis */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.navbar .nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    color: #0dcaf0;
+    background-color: rgba(13, 202, 240, 0.1);
+    transform: scale(1.1); /* Efecto de zoom en hover */
+    border-radius: 5px;
+  }
+}
+
+.navbar .d-flex a:hover {
+  color: #0dcaf0;
+  background-color: rgba(13, 202, 240, 0.1);
+  transform: scale(1.1); /* Efecto de zoom en hover */
+  border-radius: 5px;
+}
+
+.navbar .d-flex a{
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+a{
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}

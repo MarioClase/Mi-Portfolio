@@ -1,0 +1,27 @@
+/* src/app/footer/footer.component.scss */
+footer {
+  background-color: #a3d1e4;
+  color: rgb(66, 66, 66);
+  border-radius: 10px;
+  text-align: end;
+}
+
+footer p {
+  padding: 10px;
+  color: white;
+
+}
+
+footer i{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+
+footer a {
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+}

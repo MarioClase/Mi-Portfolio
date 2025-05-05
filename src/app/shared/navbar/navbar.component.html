@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <h3>Mi Portfolio</h3></a>
+      <div class="d-flex">
+        <a id="github" href="https://github.com/MarioClase" target="_blank" class="text-white mx-2">
+          <i id="github" class="bi bi-github me-2 "></i>GitHub
+        </a>
+        <a  href="https://www.linkedin.com/in/mario-palliza-sanchez-20749313a/" target="_blank" class="text-white mx-2">
+          <i id ="linkedin" class="bi bi-linkedin me-2"></i>LinkedIn
+        </a>
+        <a  href="mailto:mario.palliza@gmail.com" class="text-white mx-2">
+          <i id="email" class="bi bi-envelope me-2"></i>Email
+        </a>
+      </div>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center gap-2" href="#home">
+            <i class="bi bi-house-door"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center gap-2" href="#projects">
+            <i class="bi bi-folder2-open"></i>
+            <span>Proyectos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center gap-2" href="#about">
+            <i class="bi bi-person-circle"></i>
+            <span>Sobre mí</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center gap-2" href="#contact">
+            <i class="bi bi-envelope"></i>
+            <span>Contacto</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-outline-light ms-4" (click)="toogleTheme()">
+            <i [class]="isDarkMode ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill'">
+              Tema
+            </i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
